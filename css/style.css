@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 2600px;
+    perspective: 700px ;
+}
+hr{
+    width: 85%;
+    margin: auto;
+    color: #9b30ff;
+    background-color: #9b30ff;
+}
+/* ////////////////////////////////////////////////////////header///////////////////////////////////////////////////////// */
+header{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.header-logo{
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    left: 50px;
+
+}
+.header-icons{
+    height: 40px;
+    position: absolute;
+    left: 200px;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 30px;
+    margin-top:18px ;
+
+}
+ .header-search-bar{
+    width: 0;
+    height: 40px;
+    border-radius: 30px;
+    border: hidden;
+    position: absolute;
+    top: 0;
+    font-size: 19px;
+    visibility: hidden;
+    transition: 0.5s;
+    background-color:  #dfbdff;
+} 
+.header-icons:hover .header-search-bar{
+    visibility: visible;
+    width: 230px;
+    padding-left: 9px;
+    margin-right: 5px;
+}
+
+
+.header-search-icon{
+    color: #271736;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.header-ul{
+    margin-left: 600px;
+    height: 60%;
+    text-align: center;
+}
+.header-links{
+    display: inline;
+    height: 100%;
+    padding:5px;
+    margin: 0 5px;
+    font-size: 26px;
+    line-height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.header-links::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color:#9b30ff;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.header-links:hover::after{
+    width: 100%;
+    height: 3px;
+}
+.header-links::before{
+    content: "";
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color:#9b30ff;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.header-links:hover::before{
+    width: 100%;
+    height: 3px;
+}
+
+
+.header-table{
+    position: absolute;
+    height: 100px;
+    width: 225px;
+    right: 135px;
+    z-index: 2;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    border: 2px solid#4c187c;
+    background-color: #dfbdff;
+    transition-delay: 0.16s;
+}
+.header-links2:hover + .header-table{
+    opacity: 1;
+    visibility: visible;
+    transform:scale(2,2);
+    top: 131px;
+    right: 235px;
+}
+.header-table:hover{
+    opacity: 1;
+    visibility: visible;
+    transform:scale(2,2);
+    top: 131px;
+    right: 235px;
+}
+.header-table-col{
+    float: left;
+    height: 100%;
+    width: 30%;
+    margin: 0 1.66666667%;
+}
+.table-title{
+    margin-top: 5px;
+    line-height: 30px;
+    border-bottom: 1px dotted #9b30ff;
+    cursor: pointer;
+}
+.table-ro{
+    font-size: 11px;
+    line-height: 15px;
+    cursor: pointer;
+}
+/* //////////////////////////////////////////////////////////////main section/////////////////////////////////////////////////////////// */
+.main-parent{
+    width: 85%;
+    height: 550px;
+    margin: auto;
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+    margin-top: 10px;
+}
+.main-div{
+    margin-left: 50px;
+    width: 500px;
+    height: 360px;
+}
+.main-words{
+    font-size: 70px;
+    text-shadow: 4px 4px 5px #8970a0;
+}
+
+.shop-button {
+    background-color: #e6e6e6;
+    border: 2px solid #9b30ff;
+    color: #9b30ff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .shop-button:hover {
+    background-color: #9b30ff;
+    color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+/* /////////////////////////////////////////////////////////////special categore////////////////////////////////////////////////////// */
+.special-parent{
+    width: 85%;
+    margin: auto;
+    height: 470px;
+}
+.special-title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: default;
+    text-shadow: 4px 4px 5px #8970a0;
+}
+.special-title-underline{
+    width: 100px;
+    background-color:#9b30ff;
+    height: 3px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.special-title:hover + .special-title-underline{
+    transform: scale(1.5,1);
+}
+
+.special-content{
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
+}
+.special-divs{
+    height: 100%;
+    width: 22%;
+    margin-left: 2.4%;
+    float: left;
+    position: relative;
+}
+.special-divs-pic{
+width: 100%;
+height: 300px;
+}
+.special-divs-words{
+    font-size: 20px;
+    line-height: 25px;
+}
+.special-divs-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 43px;
+    color: #9b30ff;
+    opacity: 0;
+    cursor: pointer;
+
+}
+.special-divs1:hover .special-divs-icon1{
+    opacity: 1;
+}.special-divs2:hover .special-divs-icon2{
+    opacity: 1;
+}
+.special-divs3:hover .special-divs-icon3{
+    opacity: 1;
+}
+.special-divs4:hover .special-divs-icon4{
+    opacity: 1;
+}
+/* //////////////////////////////////////////////////////////////penelope astrid////////////////////////////////////////////////// */
+.astrid-parent{
+    width: 85%;
+    margin: auto;
+    height: 320px;
+}
+.astrid-big-div{
+    height: 100%;
+    width: 550px;
+    background-color:#e4c8ff;
+    float: left;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+.astrid-bigdiv-icon{
+    float: left;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 49px;
+    line-height: 50px;
+    color:#9b30ff;
+    margin-top: 20px;
+}
+.astrid-nextto-icon{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 50px;
+}
+.astrid-word1{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+.astrid-word2{
+    font-size: 18px;
+    line-height: 20px;
+}
+.astrid-pra{
+    font-size: 21px;
+    line-height: 23px;
+    margin-top: 47px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.astrid-3lines{
+    height: 3px;
+    width: 60px;
+    background-color: #9b30ff;
+    float: right;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+.astrid-1divs{
+    float: left;
+    height: 100%;
+    width: 270px;
+    margin-left: 25px;
+    background-image: url(../images/astrid/8.jpg);
+    background-size: cover;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.astrid-2divs{
+    float: left;
+    height: 100%;
+    width: 270px;
+    margin-left: 25px;
+    background-image: url(../images/astrid/6.jpg);
+    background-size:cover;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.astrid-1divs-words{
+    margin-left: 20px;
+    line-height: 33px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.astrid-2divs-words{
+    margin-left: 20px;
+    line-height: 33px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.astrid-2divs:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 5px 5px 8px #8970a0;
+}
+.astrid-1divs:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 5px 5px 8px #8970a0;
+}
+/* //////////////////////////////////////////////////////////icons section////////////////////////////////////////////////////////// */
+.icons-parent{
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    height: 180px;
+}
+.icons-icon{
+    float: left;
+    width: 19.86%;
+    height: 100%;
+    text-align: center;
+}
+.icons-line{
+    float: left;
+    background-color:#38105e;
+    height: 70%;
+    margin-top: 27px;
+    width: 2px;
+}
+.icons-icon-animation{
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-image: url(../images/icons/1.jpeg);
+    background-size: cover;
+    background-position:top;
+    transition:  1s  ;
+}
+.icons-icon-animation:hover {
+    background-position: bottom;
+  }
+  .icons-icon-animation2{
+    background-image: url(../images//icons/2.jpeg);
+}
+.icons-icon-animation2:hover {
+    background-position: bottom;
+  }
+  .icons-icon-animation3{
+    background-image: url(../images/icons/3.jpeg);
+}
+.icons-icon-animation3:hover {
+    background-position: bottom;
+  }
+  .icons-icon-animation4{
+    background-image: url(../images/icons/4.jpeg);
+}
+.icons-icon-animation4:hover {
+    background-position: bottom;
+  }
+  .icons-icon-animation5{
+    background-image: url(../images/icons/5.jpeg);  
+}
+.icons-icon-animation5:hover {
+    background-position: bottom;
+  }
+  /* ////////////////////////////////////////////////////////////futured products///////////////////////////////////////////////////////////////// */
+.futured-parent{
+    width: 85%;
+    margin: auto;
+  }
+.futured-title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: default;
+    text-shadow: 4px 4px 5px #8970a0;
+  }
+.futured-title-underline{
+    width: 100px;
+    background-color:#9b30ff;
+    height: 3px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  .futured-title:hover + .futured-title-underline{
+    transform: scale(1.5,1);
+}
+.futured-line-divs1{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+  }
+.futured-line-divs2{
+    width: 100%;
+    height: 500px;
+  }
+.futured-div{
+    float: left;
+    height: 100%;
+    width: 30%;
+    margin: 0 1.66%;
+    position: relative;
+    transition: 1s;
+}
+.futured-front-div{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    box-shadow: 5px 5px 8px #8970a0;
+}
+.futured-front-1{
+    background-image: url(../images/futured/1.jpg);
+    background-size: cover;
+}
+.futured-front-2{
+    background-image: url(../images/futured/2.jpg);
+    background-size: cover;
+}
+.futured-front-3{
+    background-image: url(../images/futured/3.jpg);
+    background-size: cover;
+}
+.futured-front-4{
+    background-image: url(../images/futured/4.jpg);
+    background-size: cover;
+}
+.futured-front-5{
+    background-image: url(../images/futured/5.jpg);
+    background-size: cover;
+}
+.futured-front-6{
+    background-image: url(../images/futured/6.jpg);
+    background-size: cover;
+}
+.futured-div-overlay{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    transform: scaleX(0);
+    transition: 0.19s;
+}
+.futured-overlay-1::before {    
+    content: "";
+    background-image: url(../images/futured/11.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-overlay-2::before {    
+    content: "";
+    background-image: url(../images/futured/22.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-overlay-3::before {    
+    content: "";
+    background-image: url(../images/futured/33.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-overlay-4::before {    
+    content: "";
+    background-image: url(../images/futured/44.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-overlay-5::before {    
+    content: "";
+    background-image: url(../images/futured/55.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-overlay-6::before {    
+    content: "";
+    background-image: url(../images/futured/66.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+.futured-front-div:hover .futured-div-overlay{
+    transform: scaleX(1);
+}
+.futured-div-overlay ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.futured-div-overlay ul li{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.futured-div-overlay ul li i{
+    color: #40126b;
+    line-height: 45px;
+    font-size: 45px;
+}
+.futured-div-words{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    line-height: 29px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+  .futured-title-word{
+    text-align: center;
+    line-height: 25px;
+    font-size: 23px;
+    margin-top: 20px;
+    word-spacing: 15px;
+  }
+  .gold-star{
+    color: #a443ff;
+  }
+  /* ////////////////////////////////////////////////////////////section of coby right////////////////////////////////////////////////////////////////////// */
+.copy-parent{
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 110px;
+    background-color: #a094b1;
+}
+.copy-container{
+    width: 47%;
+    height: 98%;
+    margin: auto;
+    position: relative;
+}
+.copy-img{
+    height: 100%;
+    width: 200px;
+    float: left;
+    
+}
+.copy-circels{
+    float: right;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+.copy-words{
+    float: right;
+    margin-top: 85px;
+    margin-right: 5px;
+}
+.copy-cir{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.copy-cir:hover{
+    opacity: 0.7;
+}
+.copy-icon{
+    color: white;
+}
+
+ 
+.copy-cir-1{
+    background-color:  #3b5998;
+}
+.copy-cir-2{
+    background-color: 	#1DA1F2;
+}
+.copy-cir-3{
+    color: #ff0000; 
+    background-color: rgb(255, 0, 0);
+}
+.copy-cir-4{
+     background: linear-gradient(30deg, rgb(251, 255, 0), red, #6f00ff); 
+     font-size: 43px;    
+}
+.copy-cir-5{
+    background-color: #ee331e;
+}
+.copy-cir-6{
+    background-color: #0072b1;
+}  
+
+
+
+
